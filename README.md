@@ -31,6 +31,12 @@ script: "python -m unittest discover tests/"
 
 The tags for this repo follow release tags for [ArangoDB](https://github.com/arangodb/arangodb).
 
+Example curl with version tag:
+
+```
+curl -s -L https://github.com/brennv/arangodb-travis/blob/v3.0.3/setup_arangodb.sh
+```
+
 ## Examples
 
 PRs for more examples are welcome to help fill out the `examples/` folder for more use cases.
