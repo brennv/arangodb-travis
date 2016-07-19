@@ -31,7 +31,7 @@ script: "python -m unittest discover tests/"
 
 The tags for this repo follow release tags for [ArangoDB](https://github.com/arangodb/arangodb).
 
-## Examples
+## Examples and contributing
 
 PRs for more examples are welcome to help fill out the `examples/` folder for more use cases.
 
