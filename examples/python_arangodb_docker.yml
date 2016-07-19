@@ -1,0 +1,22 @@
+# WIP, not yet working
+
+sudo: required
+
+language: python
+
+python:
+  - "2.7"
+  - "3.5"
+
+services:
+  - docker
+
+# TODO: sort out docker port forwarding, not picking up port at http://localhost:8529
+before_install:
+- docker pull arangodb:latest
+- docker run -d -e ARANGO_NO_AUTH=1 -p 127.0.0.1:8529:8529 arangodb:latest  # ARANGO_ROOT_PASSWORD=root
+- docker ps -a
+
+install: "python setup.py install"
+
+script: "python -m unittest discover tests/"
