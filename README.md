@@ -47,4 +47,4 @@ For background see https://www.arangodb.com/download/travis-ci/ and [#207](https
 
 Add example for testing across multiple db versions.
 
-Write a chef [travis-cookbook](https://github.com/brennv/travis-cookbooks/tree/add-arangodb/community-cookbooks/arangodb) for general inclusion [here](https://docs.travis-ci.com/user/database-setup/).
+Write a chef [travis-cookbook](https://github.com/brennv/travis-cookbooks/tree/add-arangodb/community-cookbooks/arangodb) for general inclusion as a 'native' [travis service](https://docs.travis-ci.com/user/database-setup/).
