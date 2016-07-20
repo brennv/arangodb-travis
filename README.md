@@ -20,9 +20,9 @@ before_install:
 - chmod +x setup_arangodb.sh
 - ./setup_arangodb.sh
 
-install: "pip install -r requirements.txt"
+install: pip install -r requirements.txt
 
-script: "python -m unittest discover tests/"
+script: python -m unittest discover tests/
 ```
 
 ## ArangoDB versions
