@@ -4,6 +4,8 @@ python:
   - "2.7"
   - "3.5"
 
+# env:
+
 before_install:
 - echo arangodb2 arangodb/password password root | sudo debconf-set-selections  # set username 'root'
 - echo arangodb2 arangodb/password_again password root | sudo debconf-set-selections  # set password 'root'
