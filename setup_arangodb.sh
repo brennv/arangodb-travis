@@ -33,7 +33,7 @@ ${ARANGOD} \
     --javascript.app-path ${ARANGODB_DIR}/js/apps \
     --javascript.startup-directory ${ARANGODB_DIR}/js \
     --database.maximal-journal-size 1048576 \
-    --server.username root \
+    --cluster.username root \
     --server.disable-authentication true &
 
 sleep 2
