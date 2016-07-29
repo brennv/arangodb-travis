@@ -4,12 +4,12 @@ python:
   - "2.7"
   - "3.5"
 
-# env:
+env:
+  - ARANGODB_VERSION: v2.8.11
+  - ARANGODB_VERSION: v3.0.3
 
 before_install:
-- echo arangodb2 arangodb/password password root | sudo debconf-set-selections  # set username 'root'
-- echo arangodb2 arangodb/password_again password root | sudo debconf-set-selections  # set password 'root'
-- curl -s -L https://raw.githubusercontent.com/brennv/arangodb-travis/master/setup_arangodb.sh -o setup_arangodb.sh
+- curl -s -L https://raw.githubusercontent.com/brennv/arangodb-travis/$ARANGODB_VERSION/setup_arangodb.sh -o setup_arangodb.sh
 - chmod +x setup_arangodb.sh
 - ./setup_arangodb.sh
 
