@@ -32,7 +32,7 @@ The tags for this repo follow release tags for [ArangoDB](https://github.com/ara
 Example curl for installer script with version tag:
 
 ```
-curl -s -L https://raw.githubusercontent.com/brennv/arangodb-travis/v3.0.3/setup_arangodb.sh
+curl -s -L https://raw.githubusercontent.com/brennv/arangodb-travis/v3.3.1/setup_arangodb.sh
 ```
 
 ## Examples
